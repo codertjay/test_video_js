@@ -7,7 +7,6 @@ import React from 'react';
 function App() {
     return (
         <div className="App">
-            heell
             {/*<h1>Testing</h1>*/}
             {/*<PlayerComponent/>*/}
             <LoginVideoPlayer/>
