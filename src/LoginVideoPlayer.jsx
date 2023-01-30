@@ -6,7 +6,7 @@ const LoginVideoPlayer = () => {
   const playerRef = useRef(null);
 
   TestCode();
-  
+
   useEffect(() => {
     const player = videojs(playerRef.current, {
       sources: [
@@ -17,7 +17,7 @@ const LoginVideoPlayer = () => {
           xhr: {
             headers: {
               Authorization:
-                "Bearer dop_v1_c83d0878125b67070a5e26de30f46c534acff5ff535697bd182f612f8bd7b98f",
+                `Bearer ${process.env.REACT_APP_ACCESS_TOKEN}`,
             },
           },
         },
